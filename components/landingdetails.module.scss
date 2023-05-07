@@ -1,0 +1,95 @@
+@keyframes waveHand {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+      }
+    75% {
+        transform: rotate(-15deg);
+      }
+    100% {
+        transform: rotate(0deg);
+      }
+  }
+
+.landingDetails {
+    width: 280px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3rem;
+}
+.introText {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+    margin-bottom: -.5rem;
+    //background-color: red;
+        p {
+            font-size: 3rem;
+            margin: 0;
+            padding: 0;
+        }
+        img {
+            margin: 0;
+            padding: 0;
+        }
+}
+
+.handEmoji {
+     &:hover{
+        animation-name: waveHand;
+        animation-timing-function: ease-in-out;
+        animation-duration: 0.35s;
+        animation-timing-function: linear;
+        animation-iteration-count: 1;
+        animation-iteration-count: 2;
+     }
+}
+
+.blurb {
+    margin: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    h1 {
+        display: inline;
+        font-size: 1rem;
+    }
+}
+
+.line {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    border: 0.75px solid rgb(219, 219, 219);
+}
+
+.icon {
+    background-color: red;
+}
+
+@media (min-width: 1024px) {
+    .landingDetails{
+        margin-left: 25vw;
+        width: 500px;
+    }
+    .introText{
+        gap: 1.5rem;
+        p {
+            font-size: 4rem;
+        }
+        img {
+            height: 4rem;
+            width: auto;
+        }
+    }
+    .blurb {
+        margin-top: .5rem;
+    }
+}

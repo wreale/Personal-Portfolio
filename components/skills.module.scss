@@ -1,0 +1,23 @@
+.skills {
+    text-align: center;
+    font-size:1.5rem;
+    margin-bottom: 10rem;
+}
+
+.skillsList{
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+@media (min-width: 800px) {
+    .skillsList {
+        max-width: 700px;
+        margin: auto;
+    }
+}
