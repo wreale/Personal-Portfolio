@@ -15,7 +15,7 @@ const LandingDetails = () => {
                 width={50}
             />
         </div>
-        <div className={styles.blurb}>My name is <h1 className={styles.name}>Will Reale.</h1> I'm a rising junior at Syracuse University majoring in Information Managment & Technology.</div>
+        <div className={styles.blurb}>My name is <h1 className={styles.name}>Will Reale.</h1> I'm a junior at Syracuse University majoring in Information Managment & Technology.</div>
         <Button href="mailto: wrreale@syr.edu">Contact Me</Button>
         <hr className={styles.line}></hr>
         <div>
